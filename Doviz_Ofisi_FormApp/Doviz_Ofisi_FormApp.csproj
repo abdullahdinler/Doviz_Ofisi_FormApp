@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3E1CF4E-457B-4B8B-A895-1FFD228C76C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Doviz_Ofisi_FormApp</RootNamespace>
+    <AssemblyName>Doviz_Ofisi_FormApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DovizOfisDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DovizOfisDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DovizOfisDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DovizOfisDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DovizOfisDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DovizOfisDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DovizOfisDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DovizOfisDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DovizOfisDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DovizOfisDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DovizOfisDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DovizOfisDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DovizOfisDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DovizOfisDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DovizOfisDBDataSet.xsc">
+      <DependentUpon>DovizOfisDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DovizOfisDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DovizOfisDBDataSet.xss">
+      <DependentUpon>DovizOfisDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet1.xsc">
+      <DependentUpon>DovizOfisDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DovizOfisDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DovizOfisDBDataSet1.xss">
+      <DependentUpon>DovizOfisDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet2.xsc">
+      <DependentUpon>DovizOfisDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DovizOfisDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DovizOfisDBDataSet2.xss">
+      <DependentUpon>DovizOfisDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet3.xsc">
+      <DependentUpon>DovizOfisDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DovizOfisDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DovizOfisDBDataSet3.xss">
+      <DependentUpon>DovizOfisDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet4.xsc">
+      <DependentUpon>DovizOfisDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DovizOfisDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DovizOfisDBDataSet4.xss">
+      <DependentUpon>DovizOfisDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet5.xsc">
+      <DependentUpon>DovizOfisDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DovizOfisDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DovizOfisDBDataSet5.xss">
+      <DependentUpon>DovizOfisDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet6.xsc">
+      <DependentUpon>DovizOfisDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DovizOfisDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DovizOfisDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DovizOfisDBDataSet6.xss">
+      <DependentUpon>DovizOfisDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
